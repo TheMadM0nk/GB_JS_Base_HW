@@ -1,0 +1,59 @@
+<script>
+
+    // Секция с функциями 
+
+    function sum(a, b) {
+        return resultSum = a + b;
+    }
+
+    function substract(a, b) {
+        return resultSubstract = a - b;
+    }
+
+    function multiply(a, b) {
+        return resultMultiply = a * b;
+    }
+
+    function divide(a, b) {
+        return resultDivide = a / b;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+
+        switch (operation) {
+            case '+':
+                mathResult = sum(arg1, arg2);
+                break;
+
+            case '-':
+                mathResult = substract(arg1, arg2);
+                break;
+
+            case '*':
+                mathResult = multiply(arg1, arg2);
+                break;
+
+            case '/':
+                mathResult = divide(arg1, arg2);
+                break;
+
+            default:
+                alert('Такой операции нет!');
+                break;
+        }
+    }
+
+
+    // Задаем переменные
+
+    var arg1 = +prompt('Введите первое число:');
+    var arg2 = +prompt('Введите второе число:');
+    var operation = prompt('Какую операцию произвести? \n(Выберети одну из данных операций: \n"+" "-" "*" "/")');
+
+
+    // Вызываем функцию и выводим результат
+
+    mathOperation(arg1, arg2, operation);
+    alert('Результат равен = ' + mathResult);
+
+</script>

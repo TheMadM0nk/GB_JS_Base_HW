@@ -1,0 +1,36 @@
+<script>
+
+    var a = +prompt('Введите первое число:');
+    var b = +prompt('Введите второе число:');
+
+    if (isNaN(a) || isNaN(b)) {
+        alert('Число должно быть ведено цифрами!')
+    }
+
+    function sum(a, b) {
+        return resultSum = a + b;
+    }
+
+    function substract(a, b) {
+        return resultSubstract = a - b;
+    }
+
+    function multiply(a, b) {
+        return resultMultiply = a * b;
+    }
+
+    function divide(a, b) {
+        return resultDivide = a / b;
+    }
+
+    sum(a, b);
+    substract(a, b);
+    multiply(a, b);
+    divide(a, b);
+
+    console.log('Сумма = ' + resultSum);
+    console.log('Вычитание = ' + resultSubstract);
+    console.log('Умножение = ' + resultMultiply);
+    console.log('Деление = ' + resultDivide);
+
+</script>

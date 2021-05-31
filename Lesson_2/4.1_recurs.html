@@ -1,0 +1,19 @@
+<script>
+
+    function recurs(x) {
+        if (x == 15) {
+            console.log(x);
+            return;
+
+        } else if (x < 0 || x > 15 || isNaN(x)) {
+            alert('Введено не верное число');
+            return;
+        }
+
+        console.log(x);
+        recurs(x + 1);
+    }
+
+    recurs(+prompt('Введите число от 0 до 15:'));
+
+</script>
