@@ -1,0 +1,74 @@
+<script>
+
+    /*
+        Задание 2 написанно очень странно, никакой конкретики...  
+        Судя из прочитанного 2е и 3е задание являются одним заданием,
+        просто по какой-то причине заголовок и само задние пометили 
+        как разные пункты.
+
+        надеюсь все сделал правильно.
+    */
+
+
+
+    // -------Функции--------------------
+
+    function addToCart(product, price) {        // функция добавления товара
+
+        if (product == false || price == false || isNaN(price)) {
+            return;
+        }
+
+        shoppingCart.push({ product: product, price: price });
+    }
+
+    function countBasketPrice(shoppingCart) {   // Функция подсчета общей суммы
+
+        for (var itemPrice of shoppingCart) {
+            totalPrice += itemPrice.price;
+        }
+    }
+
+
+
+    //--------Переменные------------------
+
+    var shoppingCart = [        // Массив нашей корзины
+
+        {
+            product: 'Кэпка',
+            price: 50
+        },
+        {
+            product: 'Ботынка',
+            price: 200
+        }
+
+    ];
+
+    var totalPrice = 0;         // Переменая для хранения суммы всех товаров
+
+    var productName = prompt('Введите имя товара:');
+    var productPrice = +prompt('Введите цену:');
+
+
+
+    //  Запускаем функцию для добавления товара, и с помощью цикла for выводим весь список товаров в корзине
+
+    addToCart(productName, productPrice)
+
+    for (var i = 0; i < shoppingCart.length; i++) {
+        console.log("Название товара - " + shoppingCart[i].product + ", стоимость - " + shoppingCart[i].price);
+    }
+
+
+
+    //  Запускаем функцию подсчета общей суммы и выводим результат
+
+    countBasketPrice(shoppingCart)
+
+    console.log('Общая стоимость товаров в корзине = ' + totalPrice);
+
+
+
+</script>
