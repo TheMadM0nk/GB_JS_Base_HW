@@ -1,0 +1,60 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+.example {
+
+    margin-left: 192px;
+    margin-top: 35px;
+    height: 85px;
+    width: 265px;
+    border: 1px dashed rgb(40, 74, 102);
+}
+
+#chessBoard {
+
+    margin-left: 75px;
+    margin-top: 35px;
+}
+
+.darkCell {
+
+    background-color: rgb(177 140 102);
+}
+
+.whiteCell {
+
+    background-color: rgb(255 250 201 / 30%);
+}
+
+.clear {
+
+    background-color: rgb(214 209 166 / 48%);
+    border: none;
+}
+
+h1 {
+
+    font-weight: 100;
+}
+
+table {
+
+    border-spacing: 0; 
+    border: 1px solid black;
+}
+
+td {
+    
+    width: 50px;
+    height: 50px;    
+    text-align: center;
+    border: 1px solid black;
+}
+
+.upSide {
+
+    transform: rotate(180deg);
+}
