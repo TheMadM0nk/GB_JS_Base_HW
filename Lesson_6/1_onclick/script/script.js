@@ -8,10 +8,14 @@ for (var i = 0; i < 3; i++) {
     btnList[i].onclick = function (e) {
 
         var screenImg = document.getElementById('screenImg');
-        screenImg.remove();
+
+        if (screenImg == null) {
+        } else {
+            screenImg.remove();
+        }
 
         var img = document.createElement('img');
-        img.src = 'big/' + e.target.id + '.jpeg';
+        img.src = 'img/big/' + e.target.id + '.jpeg';
         img.alt = 'poster';
         img.id = 'screenImg';
 
@@ -23,4 +27,12 @@ for (var i = 0; i < 3; i++) {
             alert('Невозможно загрузить изображение!');
         }
     }
-}
+};
+
+screen.onclick = function screenRemove() {
+    var screenImg = document.getElementById('screenImg');
+    if (screenImg == null) {
+    } else {
+        screenImg.remove();
+    }
+};

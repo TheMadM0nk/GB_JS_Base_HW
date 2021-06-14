@@ -9,12 +9,6 @@ body {
     background-color:  #a1d3ff;
 }
 
-h1 {
-
-    text-align: center;
-    color: red;    
-}
-
 .wrapper {
 
     margin: 0 auto;
@@ -33,17 +27,29 @@ h1 {
         height: 538px;
         margin: 25px auto;
         border-radius: 15px;
-        background-color: #696969;
+        background-color: #c4daff;
+        position: relative;
+        border: 1px solid #a9a9a9;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .info {
+            position: absolute;
+            text-align: center;
+            top: 210px;
+            left: 183px;
+        }
 
         img {
 
             width: inherit;
             border-radius: 15px;
+            position: absolute;
         }
     }
 }
-
-
 
 .buttons {
 
@@ -53,13 +59,31 @@ h1 {
     height: 110px;
     border-bottom: 1px dashed rgba(128, 128, 128, 0.363);
 
-    .imgBtn {
+    .imgBtn {        
 
         .imgSmall {
 
             width: 100px;
             border-radius: 5px;
             border: 1px solid gray;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2) ;
+                transition: 0.3s;
+                box-shadow: 4px 4px 10px black;
+            }
         }
+    }
+}
+
+.guide {
+
+    margin-top: 20px;
+
+    p {
+
+        margin: 10px;
     }
 }
