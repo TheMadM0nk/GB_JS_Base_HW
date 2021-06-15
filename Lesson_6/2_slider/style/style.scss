@@ -9,6 +9,13 @@ body {
     background-color:  #a1d3ff;
 }
 
+p {
+
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
 .wrapper {
 
     margin: 0 auto;
@@ -40,7 +47,7 @@ body {
                 width: inherit;
                 border-radius: 15px;
                 display: none;
-                position: absolute;
+                position: absolute;                
             }
             
             .active {
