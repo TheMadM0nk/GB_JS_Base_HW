@@ -1,0 +1,158 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color:  #a1d3ff;
+}
+
+p {
+
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.wrapper {
+
+    margin: 0 auto;
+    width: 770px;
+    height: 680px;    
+}
+
+.screen-box {
+
+    height: 600px;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.363);
+
+    #screen {
+
+        width: 717px;
+        height: 538px;
+        margin: 25px auto;
+        border-radius: 15px;
+        background-color: #c4daff;
+        position: relative;
+        border: 1px solid #616161;         
+        
+        .imgBox {
+
+            width: inherit;
+
+            .img {
+
+                width: inherit;
+                border-radius: 15px;
+                display: none;
+                position: absolute;                
+            }
+            
+            .active {
+
+                display: flex;
+            }
+        }
+
+        &:hover #btnPrev {
+            cursor: pointer;
+            display: flex;            
+        }
+
+        &:hover #btnNext {
+            cursor: pointer;
+            display: flex;
+        }
+
+        #btnPrev {
+
+        height: inherit;
+        width: 65px;
+        background-color:  rgba(191, 191, 191, 0.250);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        backdrop-filter: blur(1px);
+        z-index: 1;
+        // display: flex;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        
+            .arrow {
+
+                font-size: 120px;
+                font-weight: 100;
+                color: #0000007a;
+            }
+
+            &:hover {
+
+                background-color:  rgba(221, 221, 221, 0.4);
+            }
+        }
+
+        #btnNext {
+
+            height: inherit;
+            width: 65px;
+            background-color:  rgba(191, 191, 191, 0.250);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            position: absolute;
+            right: 0;
+            backdrop-filter: blur(1px);
+            z-index: 1;
+            // display: flex;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            
+            .arrow {
+    
+                font-size: 120px;
+                font-weight: 100;
+                color: #0000007a;
+            }
+
+            &:hover {
+
+                background-color:  rgba(221, 221, 221, 0.4);            
+            }                
+        }
+    }
+}
+
+.dots {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;   
+
+    .dot {
+
+        height: 11px;
+        width: 11px;
+        border: 2px solid black;
+        background-color: rgb(83, 83, 83);
+        border-radius: 50%;
+        margin: 0 3px;
+
+        &:hover {
+
+            background-color: rgb(212, 212, 212);
+            cursor: pointer;
+        }
+    }
+
+    .activeDot {
+
+        background-color: #dadada;
+        transform: scale(1.4);
+        border: 1px solid black;
+        margin: 0 5px;
+    }
+}

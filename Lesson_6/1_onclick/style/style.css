@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #a1d3ff;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 770px;
+  height: 680px;
+}
+
+.screen-box {
+  height: 580px;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.363);
+}
+
+.screen-box #screen {
+  width: 717px;
+  height: 538px;
+  margin: 25px auto;
+  border-radius: 15px;
+  background-color: #c4daff;
+  position: relative;
+  border: 1px solid #a9a9a9;
+}
+
+.screen-box #screen:hover {
+  cursor: pointer;
+}
+
+.screen-box #screen .info {
+  position: absolute;
+  text-align: center;
+  top: 210px;
+  left: 183px;
+}
+
+.screen-box #screen img {
+  width: inherit;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110px;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.363);
+}
+
+.buttons .imgBtn .imgSmall {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttons .imgBtn .imgSmall:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 4px 4px 10px black;
+          box-shadow: 4px 4px 10px black;
+}
+
+.guide {
+  margin-top: 20px;
+}
+
+.guide p {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
