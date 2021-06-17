@@ -191,6 +191,12 @@ function scoreUdate(score) {
     scoreBoard.innerHTML = '<h1>Ваш счет: ' + score + '</>';
 }
 
+function removeBomb() {
+
+    var bomb = document.querySelector(".bomb-unit");
+    bomb.classList.remove("bomb-unit");
+}
+
 
 /**
  * Проверка на змейку
@@ -221,11 +227,10 @@ function haveFood(unit) {
         // document.querySelector('.food-unit').innerHTML = "";
         check = true;
         createFood();
-        setTimeout(createBomb, 1500);
+        setTimeout(createBomb, 2000);
         score++;
         scoreUdate(score);
-
-
+        setTimeout(removeBomb, 20000);
     }
     return check;
 }
